@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, p {
+    margin: 0;
+    margin-bottom: 20px; /* Espaciado entre textos */
+}
+
+header {
+    height: 80px;
+    background-color: #e2012d;
+}
+
+.div-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+.formulario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.celda {
+    font-family: 'Bahnschrift Condensed';
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #e2012d;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #e2012eda;
+}
+
+.p_galeria {
+    font-family: 'Bahnschrift Condensed';
+    text-align: center;
+
+}
+
+.p_galeria p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.centrado {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0, 0%);
+}
+
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0, 0%, 0%);
+}
+
+.menu-nav li a {
+    font-size: 30px;
+    font-family: 'Bahnschrift Condensed';
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: .6em 1em;
+}
+
+.menu-nav li a:hover {
+    background: #e2012d;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-nav li {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 40px;
+    border: 40px;
+}
+
+main section p {
+    margin: 20px;
+}

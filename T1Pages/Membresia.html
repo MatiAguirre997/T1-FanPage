@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresia</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" href="/IMG/imagenes_Inicio/logot1.ico">
+</head>
+
+<body>
+    <header>
+        <div class="centrado">
+            <section class="menu-section">
+                <nav class="menu-nav">
+                    <ul>
+                        <li> <a href="/newsLatter.html">INICIO </a> </li>
+                        <li> <a href="/T1Pages/Galeria.html">GALERIA</a> </li>
+                        <li> <a href="/T1Pages/Tienda.html">TIENDA</a> </li>
+                        <li> <a href="/T1Pages/Membresia.html">MEMBRESIA</a> </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div class="div-form">
+            <div class="contenido-formulario">
+                <h1>REGISTRO</h1> <br>
+                <form action="https://formspree.io/f/xbljybjn" class="formulario" method="post">
+                    <div class="celda">
+                        <label for="Nombre">Nombre [*]</label>
+                        <input type="text" name="Nombre" maxlength="20" required>
+                    </div>
+                    <div class="celda">
+                        <label for="Apellido">Apellido [*]</label>
+                        <input type="text" name="Apellido" maxlength="15" required>
+                    </div>
+                    <div class="celda">
+                        <label for="Fecha de nacimiento">Fecha de nacimiento [*]</label>
+                        <input type="date" name="Fecha de nacimiento" required>
+                    </div>
+                    <div class="celda">
+                        <label for="Pais de origen">Pais de origen [*]</label>
+                        <select name="Pais de origen" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="celda">
+                        <label for="Email">Mail [*]</label>
+                        <input type="email" name="Email" size="10" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; T1 Newsletter. Todos los derechos reservados </p>
+    </footer>
+</body>
+
+
+</html>
