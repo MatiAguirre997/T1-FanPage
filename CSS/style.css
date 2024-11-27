@@ -17,8 +17,9 @@ h1 {
 }
 
 h1, h2, p {
-    margin: 0;
-    margin-bottom: 20px; /* Espaciado entre textos */
+    font-family: 'Bahnschrift Condensed';
+    margin: 20px ;
+    margin-bottom: 20px;
 }
 
 header {
@@ -139,13 +140,45 @@ button:hover {
     text-align: center;
 }
 
+
+.reseñas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.reseña {
+  background-color: #e2012d;
+  border: 1px solid #0c0a0a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(247, 60, 60, 0.986);
+}
+
+.reseña .comentario {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1f1e1e;
+}
+
+.reseña .autor {
+  font-size: 0.9rem;
+  font-style: 'Bahnschrift Condensed';
+  color: #555;
+  text-align: right;
+}
+
+
 footer {
     color: rgb(255, 255, 255);
     background-color: #000000;
-    padding: 40px;
+    padding: px;
     border: 40px;
 }
 
-main section p {
-    margin: 20px;
-}
