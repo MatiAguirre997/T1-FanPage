@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T1 Newsletter</title>
+    <title>T1 Noticias</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="IMG/imagenes_Inicio/logot1.ico">
 </head>
 
 <body>
     <header>
-        <div class="centrado">
-            <section class="menu-section">
-                <nav class="menu-nav">
-                    <ul>
-                        <li> <a href="index.html">INICIO </a> </li>
-                        <li> <a href="T1Pages/Galeria.html">GALERIA</a> </li>
-                        <li> <a href="T1Pages/Tienda.html">TIENDA</a> </li>
-                        <li> <a href="T1Pages/Membresia.html">MEMBRESIA</a> </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="IMG/imagenes_Inicio/logot1.ico" alt="T1 Logo" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="T1Pages/Galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="T1Pages/Tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="T1Pages/Membresia.html">MEMBRESIA</a>
+                        </li>
                     </ul>
-                </nav>
-            </section>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <h1>BIENVENIDO AL BOLETÍN DE NOTICIAS DE T1</h1>
-        <h2>Cuerpo del Texto</h2>
-        <p>Esto es una prueba</p>
-        <section>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quibusdam expedita quis soluta, est
-                voluptates totam amet ducimus officia magni. Dolorem possimus aut totam mollitia, nam ducimus sapiente.
-                Suscipit, nobis!
-            </p>
-        </section>
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-4">BIENVENIDO AL BOLETÍN DE NOTICIAS DE T1</h1>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Leaderboard</h2>
+        <table id="leaderboard" class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>LP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se insertarán aquí -->
+            </tbody>
+        </table>
+        <ul class="pagination justify-content-center" id="pagination">
+            <!-- Los botones de paginación se insertarán aquí -->
+        </ul>
     </main>
 
-    <footer>
-        <!-- <i class="fa-solid fa-gamepad"></i> -->
-        <p>&copy; T1 Newsletter. Todos los derechos reservados </p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; T1 Newsletter. Todos los derechos reservados</p>
     </footer>
-    <script src="https://kit.fontawesome.com/d68a4165aa.js" crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d68a4165aa.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
 </html>
